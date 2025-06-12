@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimeth</title>
+    <!--Main style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Simple icon library for menu icon (optional, can use SVG or other methods) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/Logo/atom.png" type="image/png">
+</head>
+<body>
+    <!-- Preloader -->
+     <div id="preloader">
+        <video id="preloader-video" autoplay muted playsinline>
+            <source src="assets/panda-loader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <!-- Navigation Bar -->
+     <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+             <a href="index.html" class="logo-container">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="logo-img">
+                <span class="logo-text">Atom</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+             <nav class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="project.html" class="nav-link">Projects</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <!-- Right Side Actions (Desktop) -->
+             <div class="nav-actions-desktop">
+                <a href="about.html" class="nav-link action-link">About</a>
+                <a href="login.html" class="nav-link action-link">Log in</a>
+                <a href="#get-start" class="btn btn-primary hero-cta">Get Started</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+             <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+         <nav class="nav-links-mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#benefits" class="nav-link">Benefits</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <hr class="mobile-nav-divider">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="login.html" class="nav-link">Log in</a>
+            <a href="#get-start" class="btn btn-primary nav-cta mobile-cta">Get Started</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+     <main class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Let's Code! Learning Together, Building Together</h1>
+                <p class="hero-subheadline">
+                    Collaborate, learn, and build; our coding journey, together now. Master programming with us!
+                </p>
+                <div class="get-started-row">
+                    <a href="#get-start" class="btn btn-primary hero-cta">Get Started</a>
+                    <img src="assets/Creator.jpg" alt="Get Started Icon" class="get-started-icon">
+                    <a href="https://www.facebook.com/profile.php?id=61576333364949" class="get-started-desc" target="_blank" rel="noopener" title="Hi I'm Nimeth C.(Creator of this website)">Nimeth</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="assets/Background/Background_1.png" alt="Product Illustration" class="hero-image"  onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Fallback+Hero';">
+            </div>
+        </div>
+    </main>
+    <!-- Feature Showcase Section -->
+     <section class="feature-showcase-section" id="get-start">
+        <div class="feature-showcase-container">
+            <div class="feature-image-wrapper">
+                <img src="https://www.t3premium.de/blog/wp-content/uploads/2016/09/ultra-minimal-webdesign-showcase-1.jpg" alt="Feature Image" id="featureShowcaseImage" class="feature-image" onerror="this.onerror=null;this.src='https://miro.medium.com/v2/resize:fit:800/1*VBqp_axDq-VNlubxMqEd8w.png';">
+            </div>
+            <div class="feature-controls">
+                <div class="feature-tab active" data-index="0">
+                    <h3 class="feature-tab-title">Course Schedule</h3>
+                    <p class="feature-tab-description">Schedule your courses as per your need. No more conflicts!</p>
+                    <div class="tab-progress-bar-container">
+                        <div class="tab-progress-bar"></div>
+                    </div>
+                </div>
+                <div class="feature-tab" data-index="1">
+                    <h3 class="feature-tab-title">Project & Tasks</h3>
+                    <p class="feature-tab-description">Manage your projects like a boss in Notion. Stay organized.</p>
+                    <div class="tab-progress-bar-container">
+                        <div class="tab-progress-bar"></div>
+                    </div>
+                </div>
+                <div class="feature-tab" data-index="2">
+                    <h3 class="feature-tab-title">Homework Tracker</h3>
+                    <p class="feature-tab-description">Track and manage your homework and assignments efficiently.</p>
+                    <div class="tab-progress-bar-container">
+                        <div class="tab-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section style="background-color: #f9fafb; padding: 20px;">
+        <div style="text-align: center;">
+            <h1>Our Projects</h1>
+            <h2>Explore Our Latest Work</h2>
+            <!-- ... -->
+        </div>
+        <div class="blog-section">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="assets/Project/Javascript.png" alt="Medical College Project" class="project-card-image">
+                    <div class="project-card-content">
+                        <span class="project-card-category">News</span>
+                        <h3 class="project-card-title">JavaScript</h3>
+                        <p class="project-card-description">JavaScript is a high-level, interpreted programming language primarily used for creating interactive and dynamic content on websites. It enables complex features on web pages, such as interactive maps, animated graphics, and dynamic content updates without requiring a full page reload.</p>
+                        <div class="project-card-meta">
+                            <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Arjun" alt="Arjun Shah Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Arjun Shah</span>
+                                <span class="post-date-read-time">March 12, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project/HTML.jpg" alt="Daraz Office Project" class="project-card-image">
+                    <div class="project-card-content">
+                        <span class="project-card-category">Media</span>
+                        <h3 class="project-card-title">Html and CSS</h3>
+                        <p class="project-card-description">HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the foundational technologies for building web pages. HTML provides the structure of the page, while CSS is used for layout and visual appearance.</p>
+                        <div class="project-card-meta">
+                            <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Josiah" alt="Josiah Barclay Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Josiah Barclay</span>
+                                <span class="post-date-read-time">March 23, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project/CL.jpg" alt="UNICEF Office Project" class="project-card-image">
+                    <div class="project-card-content">
+                        <span class="project-card-category">News</span>
+                        <h3 class="project-card-title">C Language</h3>
+                        <p class="project-card-description">C is a general-purpose programming language that is extremely popular, simple, and flexible to use. It is a powerful language that is widely used for system programming, developing operating systems, and embedded system applications.</p>
+                        <div class="project-card-meta">
+                            <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Evelyn" alt="Evelyn Martinez Avatar" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Evelyn Martinez</span>
+                                <span class="post-date-read-time">April 2, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Productivity Templates Section -->
+     <section class="productivity-templates-section">
+        <div class="container">
+            <div class="header-content">
+                <h1>Unleash the Power of Productivity</h1>
+                <p>Explore our extensive project collection to achieve your goals and maximize your potential.</p>
+                <a href="project.html#projectdesign" class="view-all-templates">View all Projects →</a>
+            </div>
+            <div class="image-container">
+                <img src="assets/Background/Productivity.png" alt="Productivity illustration">
+            </div>
+            <div class="templates-grid">
+                <div class="template-card">
+                    <img src="assets/Background/HTML-CSS-Projects.png" alt="Course Schedule thumbnail">
+                    <h3>Web Development Basics: HTML & CSS</h3>
+                    <p>HTML and CSS: Core Structure and Style</p>
+                    <span class="price">$24</span>
+                </div>
+                <div class="template-card">
+                    <img src="assets/Background/JS-Projects.png" alt="CRM Template thumbnail">
+                    <h3>JavaScript Fundamentals</h3>
+                    <p>JavaScript: Empowering Dynamic Web Logic.</p>
+                    <span class="price">$14</span>
+                </div>
+                <div class="template-card">
+                    <img src="assets/Background/C-project.webp" alt="Goal Tracker thumbnail">
+                    <h3>React JSX: Building UI with Elegance</h3>
+                    <p>Crafting Elegant User Interfaces with React.</p>
+                    <span class="price">$29</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notion-templates-section" id="benefits">
+    <div class="container">
+        <div class="header-and-image">
+            <div class="header-content">
+                <h1>Maximize Efficiency with Atom Projects</h1>
+                <p>Discover how Atom Projects can revolutionize your workflow and save you time.</p>
+            </div>
+            <div class="header-illustration">
+                <!-- Placeholder for the main illustration image -->
+                <img src="assets/Background/Efficency.png" alt="Person thinking with question mark">
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <!-- Placeholder for Effortless Organization icon -->
+                    <img src="assets/Background/Effortless-EP.png" alt="Organization icon">
+                </div>
+                <h3>Effortless Organization</h3>
+                <p>Keep all your tasks, projects, and data neatly arranged in one place. Pre-built templates are designed to simplify complex workflows and help you find everything you need without wasting time.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <!-- Placeholder for Enhanced Productivity icon -->
+                    <img src="assets/Background/Enhanced productivity.webp" alt="Productivity icon">
+                </div>
+                <h3>Enhanced Productivity</h3>
+                <p>Projects are designed to streamline repetitive tasks, helping you prioritize what's important. Achieve your goals efficiently while maintaining a clear and organized workspace.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <!-- Placeholder for Time-Saving Solutions icon -->
+                    <img src="assets/Background/Time Saving Solution.webp" alt="Time-Saving icon">
+                </div>
+                <h3>Time-Saving Solutions</h3>
+                <p>Skip the hassle of starting from scratch. These projects are ready-to-use, giving you more time to focus on what matters most, whether it's your personal goals or professional tasks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header">
+            <h1>It's intuitive, customizable, and keeps us all<br>on the same page.</h1>
+            <p class="author-quote">- Nimeth C.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="quote-text">"This template completely transformed how I organize my projects and daily tasks. The clean design and easy-to-use structure make it a joy to plan my work. Playing with html and css is fun." If you want to join get in.</p>
+                <div class="author-info">
+                    <img src="assets/Background/People.png" alt="Sarah L. avatar" class="author-avatar">
+                    <div class="author-details">
+                        <h4 class="author-name">Sarah L.</h4>
+                        <p class="author-title">Freelance Writer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote-text">"This template is like a personal assistant built into Notion! The level of detail is unmatched, from tracking KPIs to managing weekly reviews. It's made my life so much easier, especially as a startup founder juggling ten things at once."</p>
+                <div class="author-info">
+                    <img src="assets/Background/Peope2.png" alt="Michael D. avatar" class="author-avatar">
+                    <div class="author-details">
+                        <h4 class="author-name">Michael D.</h4>
+                        <p class="author-title">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote-text">"The attention to detail in this template blew me away. It's like it was designed by someone who truly understands what creators and professionals need to stay on top of their game. I feel more in control and productive than ever before."</p>
+                <div class="author-info">
+                    <img src="assets/Background/People3.png" alt="Maria S. avatar" class="author-avatar">
+                    <div class="author-details">
+                        <h4 class="author-name">Maria S.</h4>
+                        <p class="author-title">Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="insights-section" >
+    <div class="container">
+        <div class="insights-header">
+            <div class="header-text-content">
+                <h1>Insights to Inspire: Master<br>Notion Like a Pro</h1>
+                <p>Discover actionable tips, creative ideas, and expert strategies to unlock the full potential of Notion.</p>
+                <a href="#" class="view-all-posts-link">See all posts →</a>
+            </div>
+            <div class="header-illustration-wrapper">
+                <img src="assets/Insight-header/Insight.webp" alt="Person reading under a tree">
+            </div>
+        </div>
+
+        <div class="featured-post-card">
+            <div class="featured-post-image">
+                <img src="assets/Insight-header/Team collaboration.png" alt="Team collaborating around a monitor">
+            </div>
+            <div class="featured-post-content">
+                <span class="post-date">Jan 17, 2025</span>
+                <h2>Atom Projects for Better Team Collaboration</h2>
+                <p>Revolutionize teamwork—discover how Atom projects simplify and enhance team collaboration.</p>
+                <div class="author-info-bottom">
+                    <img src="assets/Creator.jpg" alt="Nimeth C. avatar" class="author-avatar">
+                    <span class="author-name">Nimeth C.</span>
+                    <span class="author-role">Creator</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-posts-grid">
+            <a href="#" class="small-post-card">
+                <div class="small-post-image-wrapper">
+                    <img src="assets/Project/Atom_1.png" alt="People using Notion for habits">
+                </div>
+                <h3>Simplify Your Life with Notion Habit Templates</h3>
+                <span class="post-date">Jan 17, 2025</span>
+            </a>
+
+            <a href="#" class="small-post-card">
+                <div class="small-post-image-wrapper">
+                    <img src="assets/Project/Atom_2.webp" alt="Person tracking goals on a laptop">
+                </div>
+                <h3>Master Your Goals with the Ultimate Goal Tracker</h3>
+                <span class="post-date">Jan 16, 2025</span>
+            </a>
+
+            <a href="#" class="small-post-card">
+                <div class="small-post-image-wrapper">
+                    <img src="assets/Project/Atom_3.jpg" alt="Students collaborating and studying">
+                </div>
+                <h3>How Students Can Ace Their Studies with Notion</h3>
+                <span class="post-date">Jan 15, 2025</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <div class="header-content-faq">
+                    <h1>Your Questions, Answered</h1>
+                    <p>Find answers to common questions about our template and its features.</p>
+                    <a href="#" class="lets-talk-link">Still have questions? Let's talk! →</a>
+                </div>
+                <div class="header-illustration-faq">
+                    <img src="assets/Background/Your question.png" alt="People with a large question mark">
+                </div>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        Are your HTML/CSS/JS project templates free to use?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-1" aria-hidden="true">
+                        <p>
+                            Yes, all templates are 100% free to use. The entire website's code is also available on my GitHub bio. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-2">
+                        Can I customize your templates for my own projects?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-2" aria-hidden="true">
+                        <p>
+                             Absolutely! Feel free to use and build your own website with them, but please remember to credit my name.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-3">
+                        What inspired you to start 'Atom' and share your journey?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-3" aria-hidden="true">
+                        <p>
+                             I was greatly inspired by templates from Framer, especially a template called 'Notion', which I used as a reference to create this website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-4">
+                         How often do you add new templates or content?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-4" aria-hidden="true">
+                        <p>
+                            I don't add templates often. As a single person, it takes a significant amount of time to create each one; even this website took over a week to complete.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-5">
+                        Can I request a specific type of template or tutorial?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-5" aria-hidden="true">
+                        <p>
+                            I don't add templates often. As a single person, it takes a significant amount of time to create each one; even this website took over a week to complete.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-6">
+                        What's your biggest front-end challenge right now?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content" id="faq-answer-6" aria-hidden="true">
+                        <p>
+                            Yes, if you'd like me to provide something specific, you can directly Gmail me. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.icon');
+
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+                    // Close all other open accordions
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== this && otherHeader.getAttribute('aria-expanded') === 'true') {
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('.icon');
+
+                            otherHeader.setAttribute('aria-expanded', 'false');
+                            otherContent.style.maxHeight = '0';
+                            otherContent.setAttribute('aria-hidden', 'true');
+                            otherContent.style.opacity = '0';
+                            otherContent.style.visibility = 'hidden';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    if (isExpanded) {
+                        // If currently expanded, collapse it
+                        this.setAttribute('aria-expanded', 'false');
+                        content.style.maxHeight = '0';
+                        content.setAttribute('aria-hidden', 'true');
+                        content.style.opacity = '0';
+                        content.style.visibility = 'hidden';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        // If currently collapsed, expand it
+                        this.setAttribute('aria-expanded', 'true');
+                        content.style.maxHeight = 'none'; // Temporarily remove max-height
+                        const scrollHeight = content.scrollHeight; // Get the full height of the content
+                        content.style.maxHeight = scrollHeight + 'px'; // Set max-height for transition
+
+                        content.removeAttribute('aria-hidden');
+                        content.style.opacity = '1';
+                        content.style.visibility = 'visible';
+                        icon.style.transform = 'rotate(45deg)';
+                    }
+                });
+
+                // Add resize listener to recalculate max-height for open accordions
+                window.addEventListener('resize', function() {
+                    if (header.getAttribute('aria-expanded') === 'true') {
+                        const content = header.nextElementSibling;
+                        content.style.maxHeight = 'none'; // Temporarily remove max-height
+                        content.style.maxHeight = content.scrollHeight + 'px'; // Recalculate
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Get Tips, Updates, and<br>Insights Straight to Your Inbox</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="nimethbaaba1@gmail.com" aria-label="Email address">
+                <button type="submit">Subscribe Now</button>
+            </form>
+            <p class="privacy-note">*We do not sell or share your personal information.</p>
+        </div>
+        <div class="newsletter-illustration">
+            <img src="assets/Background/Email.png" alt="Email newsletter illustration">
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="footer-logo-img">
+                <span>Atom</span>
+            </div>
+            <p>Simplify Selling, Empower Your Creativity.</p>
+            <p class="copyright">&copy; 2025 Atom, All Rights Reserved</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://cdnjs.com/">cdnjs</a></li>
+                    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                    <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                    <li><a href="https://www.freepik.com/">Freepik</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legals</h3>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- You should place the following Font Awesome CDN link in the <head> section of your main HTML file -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+<div id="popup-overlay">
+    <div id="popup-content-box">
+        <!-- Close Button -->
+        <button class="close-button" aria-label="Close popup" onclick="hidePopup()">
+            &times;
+        </button>
+
+        <!-- Image Added Here -->
+        <img src="assets/Background/Construction.jpg" alt="Under Construction" class="popup-image">
+
+        <!-- Main Message -->
+        <h3>Website Under Construction!</h3>
+        <p>
+            We're diligently working to bring you an improved experience <i>(some features may be unavailable)</i>. For the latest updates and announcements, follow us on social media!
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://x.com/NimethSiir?t=c1K-TmwYY28W72iXBzoeMw&s=09" target="_blank" aria-label="Follow us on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://youtube.com/YOUR_YOUTUBE_CHANNEL" target="_blank" aria-label="Subscribe on YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/share/16ian2ny8c/" target="_blank" aria-label="Like us on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>

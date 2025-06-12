@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimeth</title>
+    <!--Main style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Simple icon library for menu icon (optional, can use SVG or other methods) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/Logo/atom.png" type="image/png">
+</head>
+<body>
+    <!-- Preloader -->
+     <div id="preloader">
+        <video id="preloader-video" autoplay muted playsinline>
+            <source src="assets/panda-loader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navigation Bar -->
+     <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+             <a href="#" class="logo-container">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="logo-img">
+                <span class="logo-text">Atom</span>
+            </a>
+            <!-- Desktop Navigation Links -->
+             <nav class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#benefits" class="nav-link">Benefits</a>
+                <a href="project.html" class="nav-link">Projects</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <!-- Right Side Actions (Desktop) -->
+             <div class="nav-actions-desktop">
+                <a href="about.html" class="nav-link action-link">About</a>
+                <a href="login.html" class="nav-link action-link">Log in</a>
+                <a href="index.html#get-start" class="btn btn-primary hero-cta">Get Started</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+             <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+         <nav class="nav-links-mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#benefits" class="nav-link">Benefits</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <hr class="mobile-nav-divider">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="login.html" class="nav-link">Log in</a>
+            <a href="index.html#get-start" class="btn btn-primary nav-cta mobile-cta">Get Started</a>
+        </nav>
+    </header>
+        <section class="template-listing-page-section" id="templates-section">
+            <div class="template-header-area">
+                <div class="template-header-text">
+                    <h1>Grateful for their invaluable assistance, this website was established.</h1>
+                    <p>Their unparalleled support and guidance were instrumental in this website's successful development. We appreciate their dedication and impactful contributions throughout the process.</p>
+                    <a href="#resources-section" class="template-view-all-link">View All Videos →</a>
+                </div>
+                <div class="template-header-image-container">
+                    <img src="assets/Background/Resource.jpg" alt="Productivity Templates Showcase">
+                </div>
+            </div>
+    </section>
+    <section class="videos-section" id="resources-section">
+    <h2 class="section-title">Videos</h2>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/Iy-h9EM6Ypk" title="Learn CSS in 7 Days | Course Announcement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <span>Coding2go</span>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/cVEOhgPziO8" title="How To Deploy Full Stack React App For Free |  Deploy MERN Stack Project In 10 Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <span>GreatStack</span>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/BzYMFd-lQL4" title="Learn HTML for Beginners - W3Schools.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <span>w3schools.com</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Get Tips, Updates, and<br>Insights Straight to Your Inbox</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="nimethbaaba1@gmail.com" aria-label="Email address">
+                <button type="submit">Subscribe Now</button>
+            </form>
+            <p class="privacy-note">*We do not sell or share your personal information.</p>
+        </div>
+        <div class="newsletter-illustration">
+            <img src="assets/Background/Email.png" alt="Email newsletter illustration">
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="footer-logo-img">
+                <span>Atom</span>
+            </div>
+            <p>Simplify Selling, Empower Your Creativity.</p>
+            <p class="copyright">&copy; 2025 Atom, All Rights Reserved</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://cdnjs.com/">cdnjs</a></li>
+                    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                    <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                    <li><a href="https://www.freepik.com/">Freepik</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legals</h3>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

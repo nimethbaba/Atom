@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimeth</title>
+    <!--Main style sheet-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Simple icon library for menu icon (optional, can use SVG or other methods) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/Logo/atom.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+     <div id="preloader">
+        <video id="preloader-video" autoplay muted playsinline>
+            <source src="assets/panda-loader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <!-- Navigation Bar -->
+     <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+             <a href="index.html" class="logo-container">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="logo-img">
+                <span class="logo-text">Atom</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+             <nav class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#benefits" class="nav-link">Benefits</a>
+                <a href="project.html" class="nav-link">Projects</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <!-- Right Side Actions (Desktop) -->
+             <div class="nav-actions-desktop">
+                <a href="about.html" class="nav-link action-link">About</a>
+                <a href="login.html" class="nav-link action-link">Log in</a>
+                <a href="index.html#get-start" class="btn btn-primary hero-cta">Get Started</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+             <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+         <nav class="nav-links-mobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#benefits" class="nav-link">Benefits</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <hr class="mobile-nav-divider">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="login.html" class="nav-link">Log in</a>
+            <a href="#get-start" class="btn btn-primary nav-cta mobile-cta">Get Started</a>
+        </nav>
+    </header>
+        <section class="template-listing-page-section" id="templates-section">
+            <div class="template-header-area">
+                <div class="template-header-text">
+                    <h1>Project Designed to Boost Your Productivity</h1>
+                    <p>Unlock your potential with our curated collection of Atom projects, designed to streamline your workflow and enhance every aspect of your life.</p>
+                    <a href="#projectdesign" class="template-view-all-link">View All Projects →</a>
+                </div>
+                <div class="template-header-image-container">
+                    <img src="assets/Background/Designing.jpg" alt="Productivity Templates Showcase">
+                </div>
+            </div>
+
+            <div class="template-search-filter-controls" id="projectdesign">
+                <div class="template-search-input-wrapper">
+                    <input type="text" id="templateSearchInputField" placeholder="Search..." aria-label="Search templates">
+                    <i class="fas fa-search template-search-icon"></i>
+                    <div id="templateSearchResultsDropdown" class="template-search-results-dropdown">
+                        <div class="template-search-result-list" id="templateSearchResultsList"></div>
+                    </div>
+                </div>
+                <div class="template-filter-buttons">
+                    <button class="template-filter-btn active" data-category="All">All</button>
+                    <button class="template-filter-btn" data-category="Travel">Travel</button>
+                    <button class="template-filter-btn" data-category="Work">Work</button>
+                    <button class="template-filter-btn" data-category="Education">Education</button>
+                    <button class="template-filter-btn" data-category="Productivity">Productivity</button>
+                </div>
+            </div>
+
+            <div class="templates-display-grid" id="templatesDisplayGrid">
+                </div>
+            <div class="template-load-more-section">
+                <button id="templateLoadMoreBtn" class="btn btn-primary">Load More</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="custom-solution-section">
+    <div class="image-container">
+        <img src="assets/Background/Built.jpg" alt="Illustration of a person working">
+        </div>
+    <div class="text-content">
+        <h2>Built for You, By Us</h2>
+        <p>
+            Need a template tailored to your unique needs? <br>
+            Let us create a custom solution just for you.
+        </p>
+        <a href="#" class="custom-template-link">
+            Request Your Custom Template &rarr;
+        </a>
+    </div>
+</section>
+
+
+
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Get Tips, Updates, and<br>Insights Straight to Your Inbox</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="nimethbaaba1@gmail.com" aria-label="Email address">
+                <button type="submit">Subscribe Now</button>
+            </form>
+            <p class="privacy-note">*We do not sell or share your personal information.</p>
+        </div>
+        <div class="newsletter-illustration">
+            <img src="assets/Background/Email.png" alt="Email newsletter illustration">
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="assets/Logo/atom.gif" alt="Company Logo" class="footer-logo-img">
+                <span>Atom</span>
+            </div>
+            <p>Simplify Selling, Empower Your Creativity.</p>
+            <p class="copyright">&copy; 2025 Atom, All Rights Reserved</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Template</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://cdnjs.com/">cdnjs</a></li>
+                    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                    <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                    <li><a href="https://www.freepik.com/">Freepik</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legals</h3>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+   
+
+    
+    <script src="script/script.js"></script>
+    <script src="script/templates-script.js"></script>
+</body>
+</html>
